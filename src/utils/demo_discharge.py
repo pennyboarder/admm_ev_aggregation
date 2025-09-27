@@ -6,8 +6,8 @@ Enhanced demo with EV discharge (external use) scenarios
 from typing import List, Tuple
 import random
 import math
-from models import EVAgent, GlobalParams, MarketInputs
-from utils import build_blocks
+from ..core.models import EVAgent, GlobalParams, MarketInputs
+from .utils import build_blocks
 
 
 def build_demo_with_discharge(n_evs=10, hours=4, dt_min=5, seed=7, 

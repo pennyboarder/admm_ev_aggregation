@@ -5,8 +5,8 @@ Demo data generator for EV aggregation system
 
 from typing import List, Tuple
 import random
-from models import EVAgent, GlobalParams, MarketInputs
-from utils import build_blocks
+from ..core.models import EVAgent, GlobalParams, MarketInputs
+from .utils import build_blocks
 
 
 def build_demo(n_evs=10, hours=4, dt_min=5, seed=7) -> Tuple[List[EVAgent], GlobalParams, MarketInputs, List[float], List[int], List[float]]:

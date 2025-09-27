@@ -3,19 +3,19 @@
 Main script for running ADMM EV aggregation demo with automatic bidding optimization
 """
 
-from demo import build_demo
-from demo_discharge import build_demo_with_discharge
-from admm_coordinator import admm_cut_with_baseline
-from bidding_optimizer import solve_ev_with_bidding_optimization
-from models import EVAgent
-from visualization import (
+from ..utils.demo import build_demo
+from ..utils.demo_discharge import build_demo_with_discharge
+from ..solvers.admm_coordinator import admm_cut_with_baseline
+from ..solvers.bidding_optimizer import solve_ev_with_bidding_optimization
+from ..core.models import EVAgent
+from ..utils.visualization import (
     plot_ev_charging_schedule,
     plot_soc_evolution,
     plot_aggregate_analysis,
     plot_convergence_history,
     plot_ev_discharge_patterns
 )
-from csv_export import export_all_csv_data
+from ..utils.csv_export import export_all_csv_data
 import sys
 
 
@@ -186,7 +186,7 @@ def main():
     # print("Progress will be displayed with tqdm progress bars...")
     # print("Using multi-threaded parallel processing...")
     # 新しいターゲット制御機能を使用してベースライン追従を改善
-    from admm_coordinator import admm_cut_with_baseline_oop
+    from ..solvers.admm_coordinator import admm_cut_with_baseline_oop
     out = admm_cut_with_baseline_oop(
         evs, gp, mi, R_bid, P_base, optimal_bidding,
         post_slots=6, rho_r=6.0, rho_e=4.0, rho_p=3.0,

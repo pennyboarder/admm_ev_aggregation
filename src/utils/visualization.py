@@ -8,7 +8,7 @@ import numpy as np
 import os
 from datetime import datetime
 from typing import List, Dict
-from models import EVAgent, GlobalParams, MarketInputs
+from ..core.models import EVAgent, GlobalParams, MarketInputs
 
 
 def plot_ev_charging_schedule(

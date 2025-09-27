@@ -5,7 +5,7 @@ Local solver using EVAgent class methods
 
 from typing import List, Dict
 import pulp
-from models import EVAgent, GlobalParams, MarketInputs
+from ..core.models import EVAgent, GlobalParams, MarketInputs
 
 
 def solve_single_ev_parallel_oop(args):

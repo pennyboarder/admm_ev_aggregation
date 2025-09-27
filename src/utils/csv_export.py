@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 from typing import List, Dict
 from tqdm import tqdm
-from models import EVAgent, GlobalParams, MarketInputs
+from ..core.models import EVAgent, GlobalParams, MarketInputs
 
 
 def export_time_series_csv(

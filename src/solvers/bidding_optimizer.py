@@ -3,7 +3,7 @@ Enhanced solver with bidding decision optimization
 """
 from typing import List, Dict
 import pulp
-from models import EVAgent
+from ..core.models import EVAgent
 
 
 def solve_ev_with_bidding_optimization(

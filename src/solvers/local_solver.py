@@ -5,7 +5,7 @@ Local optimization problem solver for individual EVs
 
 from typing import List, Dict
 import pulp
-from models import EVAgent, GlobalParams, MarketInputs
+from ..core.models import EVAgent, GlobalParams, MarketInputs
 
 
 def solve_local_ev_cut_with_baseline_L1(

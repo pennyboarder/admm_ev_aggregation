@@ -8,10 +8,10 @@ import math
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 from tqdm import tqdm
-from models import EVAgent, GlobalParams, MarketInputs
-from utils import build_blocks, blocks_to_slot_mask, build_post_windows
-from local_solver import solve_local_ev_cut_with_baseline_L1, solve_local_ev_cut_with_baseline_enforcement_L1
-from local_solver_oop import solve_ev_with_agent_methods, solve_single_ev_parallel_oop
+from ..core.models import EVAgent, GlobalParams, MarketInputs
+from ..utils.utils import build_blocks, blocks_to_slot_mask, build_post_windows
+from .local_solver import solve_local_ev_cut_with_baseline_L1, solve_local_ev_cut_with_baseline_enforcement_L1
+from .local_solver_oop import solve_ev_with_agent_methods, solve_single_ev_parallel_oop
 
 
 def solve_single_ev_parallel(args):
