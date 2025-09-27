@@ -1,0 +1,5 @@
+fonttools==4.60.0
+matplotlib==3.10.6
+numpy==2.2.6
+PuLP==3.3.0
+tqdm==4.67.1

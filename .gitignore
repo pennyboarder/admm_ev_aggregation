@@ -216,6 +216,5 @@ __marimo__/
 .streamlit/secrets.toml
 
 *.csv
-*.txt
 *.png
 output/*

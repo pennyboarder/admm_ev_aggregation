@@ -1,0 +1,13 @@
+{
+	"name": "admm-ev-aggregation",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"njpwerner.autodocstring"
+	],
+	"runArgs": [
+		"--shm-size",
+		"32G"
+	]
+}
